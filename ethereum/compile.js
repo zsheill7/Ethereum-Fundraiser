@@ -2,6 +2,9 @@ const path = require('path');
 const solc = require('solc');
 const fs = require('fs-extra');
 
+const compiledFactory = require('../ethereum/build/CampaignFactory.json');
+const compiledCampaign = require('../ethereum/build/Campaign.json');
+
 const buildPath = path.resolve(__dirname, 'build');
 fs.removeSync(buildPath);
 
